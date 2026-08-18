@@ -1,0 +1,8 @@
+model: ollama/qwen2.5-coder:7b
+api-base: http://localhost:11434/v1
+edit-format: diff
+auto-commits: true
+map-refresh: always
+cache-prompts: true
+# Recomendado: para que no pregunte tanto antes de aplicar cambios
+yes: true

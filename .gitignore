@@ -1,0 +1,26 @@
+# === Lista blanca: todo ignorado por defecto, solo se permite lo explícito ===
+# Esto evita que cualquier archivo nuevo (config, backup, script suelto)
+# entre al repositorio por accidente, sin tener que mantener una lista
+# de exclusiones que siempre se queda corta.
+
+/*
+
+# Permitir wp-content, pero solo para poder entrar a themes/astra-child
+!/wp-content/
+/wp-content/*
+!/wp-content/themes/
+/wp-content/themes/*
+!/wp-content/themes/astra-child/
+
+# Dentro del tema, ignorar cachés/temporales si los hubiera
+/wp-content/themes/astra-child/**/*.log
+/wp-content/themes/astra-child/**/.DS_Store
+
+# Archivos de raíz permitidos explícitamente
+!/.gitignore
+!/CLAUDE.md
+
+# Nunca versionar credenciales, pase lo que pase
+wp-config.php
+wp-configbck.php
+*.sql

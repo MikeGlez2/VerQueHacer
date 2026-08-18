@@ -1,0 +1,59 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fondo circular suave -->
+  <circle cx="100" cy="100" r="95" fill="#F0F4F8" stroke="#E8EDFF" stroke-width="2"/>
+  
+  <!-- CENTRO: Pin de ubicación + Calendario -->
+  <g transform="translate(75, 70)">
+    <!-- Pin de ubicación -->
+    <path d="M 15 0 C 22.18 0 28 5.82 28 13 C 28 22.5 15 40 15 40 C 15 40 2 22.5 2 13 C 2 5.82 7.82 0 15 0 Z" fill="#FF6B35" opacity="0.9"/>
+    <circle cx="15" cy="13" r="5" fill="#FFFFFF"/>
+  </g>
+  
+  <g transform="translate(105, 70)">
+    <!-- Calendario -->
+    <rect x="0" y="2" width="30" height="36" rx="2" fill="#1E90FF" opacity="0.9"/>
+    <rect x="0" y="2" width="30" height="7" rx="2" fill="#0047AB"/>
+    <circle cx="5" cy="22" r="2.5" fill="#FFFFFF" opacity="0.8"/>
+    <circle cx="15" cy="22" r="2.5" fill="#FFFFFF" opacity="0.8"/>
+    <circle cx="25" cy="22" r="2.5" fill="#FFFFFF" opacity="0.8"/>
+    <text x="15" y="33" font-size="10" font-weight="bold" text-anchor="middle" fill="#FFFFFF">25</text>
+  </g>
+  
+  <!-- TOP-LEFT: MÚSICA (Nota musical) -->
+  <g transform="translate(55, 50)">
+    <circle cx="0" cy="0" r="18" fill="#9B59B6" opacity="0.9"/>
+    <!-- Nota musical simplificada -->
+    <ellipse cx="-3" cy="4" rx="3.5" ry="4" fill="#FFFFFF"/>
+    <rect x="0" y="-6" width="2.5" height="12" fill="#FFFFFF"/>
+    <path d="M 2.5 -6 Q 4.5 -3 2.5 1" stroke="#FFFFFF" stroke-width="2" fill="none"/>
+  </g>
+  
+  <!-- TOP-RIGHT: CINE (Cámara/Película) -->
+  <g transform="translate(145, 50)">
+    <circle cx="0" cy="0" r="18" fill="#E74C3C" opacity="0.9"/>
+    <!-- Cine/Cámara -->
+    <rect x="-6" y="-3" width="12" height="7" rx="1.5" fill="#FFFFFF"/>
+    <circle cx="0" cy="0.5" r="3" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
+    <circle cx="0" cy="0.5" r="1.8" fill="#E74C3C" opacity="0.9"/>
+  </g>
+  
+  <!-- BOTTOM-LEFT: ESCENA (Máscara teatro) -->
+  <g transform="translate(55, 150)">
+    <circle cx="0" cy="0" r="18" fill="#F39C12" opacity="0.9"/>
+    <!-- Máscaras teatro (feliz y triste) -->
+    <circle cx="-3.5" cy="-1" r="3.5" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
+    <path d="M -4.5 -1 Q -3.5 1.5 -2.5 -1" stroke="#FFFFFF" stroke-width="1" fill="none"/>
+    <circle cx="3.5" cy="-1" r="3.5" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
+    <path d="M 2.5 1 Q 3.5 -1 4.5 1" stroke="#FFFFFF" stroke-width="1" fill="none"/>
+  </g>
+  
+  <!-- BOTTOM-RIGHT: EXPOSICIONES (Marco/Galería) -->
+  <g transform="translate(145, 150)">
+    <circle cx="0" cy="0" r="18" fill="#16A085" opacity="0.9"/>
+    <!-- Marco de galería -->
+    <rect x="-6" y="-4" width="12" height="8" rx="1" fill="none" stroke="#FFFFFF" stroke-width="1.8"/>
+    <line x1="-3" y1="-4" x2="-3" y2="4" stroke="#FFFFFF" stroke-width="1.2" opacity="0.7"/>
+    <line x1="3" y1="-4" x2="3" y2="4" stroke="#FFFFFF" stroke-width="1.2" opacity="0.7"/>
+    <circle cx="0" cy="0" r="2" fill="#FFFFFF" opacity="0.8"/>
+  </g>
+</svg>
